@@ -1,0 +1,59 @@
+html, body, main {
+    height: 100%;
+    width: 100%;
+    background-color: #424242;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-master {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 70vh;
+    height: 70vh;
+}
+
+.campo-jogo {
+    height: 33%;
+    width: 33%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forma-circulo {
+    height: 60%;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+
+.forma-x {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.forma-x::before {
+    height: 15vh;
+    transform: rotate(45deg);
+    content: "";
+    border: 3px solid white;
+    color: white;
+}
+
+.forma-x::after {
+    height: 15vh;
+    margin-top: 8px;
+    transform: rotate(-45deg);
+    content: "";
+    border: 3px solid white;
+    color: white;
+}
